@@ -1,0 +1,16 @@
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\bin\Debug\net6.0\P3_ThanatosMods.deps.json
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\bin\Debug\net6.0\P3_ThanatosMods.dll
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.csproj.AssemblyReference.cache
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.GeneratedMSBuildEditorConfig.editorconfig
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.AssemblyInfoInputs.cache
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.AssemblyInfo.cs
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.csproj.CoreCompileInputs.cache
+D:\STEAM\steamapps\common\Stardew Valley\Mods\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.dll
+D:\code\P3_ThanatosMods\bin\Debug\net6.0\P3_ThanatosMods.deps.json
+D:\code\P3_ThanatosMods\bin\Debug\net6.0\P3_ThanatosMods.dll
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.csproj.AssemblyReference.cache
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.AssemblyInfoInputs.cache
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.AssemblyInfo.cs
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.csproj.CoreCompileInputs.cache
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.dll

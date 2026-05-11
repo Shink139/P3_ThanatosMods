@@ -1,0 +1,9 @@
+{
+  "Name": "P3_ThanatosMods",
+  "Author": "Miaonico",
+  "Version": "1.0.0",
+  "Description": "通过C#添加一个新地图和传送门。",
+  "UniqueID": "Miaonico.RyojiHouse",
+  "EntryDll": "P3_ThanatosMods.dll",
+  "MinimumApiVersion": "4.0.0"
+}

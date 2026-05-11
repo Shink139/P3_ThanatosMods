@@ -1,0 +1,31 @@
+Mod/
+├── Core/
+│   ├── NPCManager.cs          // 管理所有NPC（生成/销毁/切换）
+│   ├── TransformSystem.cs     // 变身系统（A↔B）
+│
+├── AI/
+|------AIManager
+│   ├── CompanionAI.cs         // AI总控制器
+│   ├── StateMachine.cs        // 状态机
+│   ├── States/
+│   │   ├── FollowState.cs
+│   │   ├── AttackState.cs
+│   │   ├── IdleState.cs
+│
+├── Systems/
+│   ├── TargetSystem.cs        // 选怪逻辑
+│   ├── PathfindingSystem.cs   // 寻路封装
+│   ├── CombatSystem.cs        // 战斗计算
+│
+├── Models/
+│   ├── NPCData.cs             // NPC配置（数据驱动）
+│   ├── SkillData.cs           // 技能树
+│
+├── Entry/
+│   ├── ModEntry.cs            // SMAPI入口
+
+//问题；
+1.没有掉落物 1
+2.社交显示bug
+3.房间问题
+4.状态问题

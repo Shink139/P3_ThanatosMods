@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gUedzSbh0Zg=",
+  "success": true,
+  "projectFilePath": "D:\\code\\P3_ThanatosMods\\P3_ThanatosMods.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.4.0\\pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
