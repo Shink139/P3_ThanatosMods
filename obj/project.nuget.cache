@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "gUedzSbh0Zg=",
+  "dgSpecHash": "vrRnfuHuf1Y=",
   "success": true,
   "projectFilePath": "D:\\code\\P3_ThanatosMods\\P3_ThanatosMods.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.4.0\\pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "获取包漏洞数据时出错: 无法加载源 https://api.nuget.org/v3/index.json 的服务索引。",
+      "projectPath": "D:\\code\\P3_ThanatosMods\\P3_ThanatosMods.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\code\\P3_ThanatosMods\\P3_ThanatosMods.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

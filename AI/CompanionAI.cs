@@ -21,12 +21,14 @@ namespace P3_ThanatosMods
             private readonly NPCManager _NPCManager;
 
             public TargetSystem TargetSystem;
+             public NPCData Data { get; }
+             public SkillManager SkillManager { get; }
     public PathfindingSystem PathfindingSystem;
     public CombatSystem CombatSystem;
             private StateMachine stateMachine;
           
             // 构造函数接收 IMonitor 和 NPCManager
-            public CompanionAI(IMonitor Monitor,NPC npc)
+            public CompanionAI(IMonitor Monitor,NPC npc,NPCData npcData)
             {
                 _Monitor = Monitor;
                 npc_P = npc;
@@ -34,8 +36,10 @@ namespace P3_ThanatosMods
                     TargetSystem = new TargetSystem(Monitor, this);
                     PathfindingSystem = new PathfindingSystem(Monitor, this);
                     CombatSystem = new CombatSystem(Monitor, this);
+                     Data = npcData;
                
                 stateMachine = new StateMachine(Monitor);
+                 SkillManager = new SkillManager(npcData.Skills);
             }
             public void Update()
         {
@@ -86,6 +90,7 @@ public bool InAttackRange(Monster target)
 
 public void Attack(Monster target)
 {
+    SkillManager.TryUseBestSkill(this, target);
     CombatSystem.Attack(target);
 }
 public GameLocation GetGameLocation()

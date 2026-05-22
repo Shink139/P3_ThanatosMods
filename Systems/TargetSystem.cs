@@ -7,7 +7,6 @@ using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.Locations;
 using StardewValley.Monsters;
-using xTile;
 
 namespace P3_ThanatosMods
 {

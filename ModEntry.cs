@@ -15,17 +15,16 @@ namespace P3_ThanatosMods
         private TransformSystem? _transformHandler;
         private NPCManager? _NPCManager;
         
-       
         public override void Entry(IModHelper helper)
         {
-            
+             SkillDatabase.Load(helper);
+            NPCDatabase.Load(helper);
+
             _mineHandler = new MapSetting(this.Monitor);
             _NPCManager = new NPCManager(this.Monitor);
              _AIManager = new AIManager(this.Monitor);
             _transformHandler = new TransformSystem(this.Monitor, _NPCManager, _AIManager);
            
-           
-
             //地图设置
            // helper.Events.Content.AssetRequested += _mineHandler.OnAssetRequested;
             //helper.Events.GameLoop.SaveLoaded += _mineHandler.OnSaveLoaded;

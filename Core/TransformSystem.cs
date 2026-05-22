@@ -19,6 +19,7 @@ namespace P3_ThanatosMods
      private string NPCname_P = "Thanatos";
      private NPC? npc_R;
      private NPC? npc_P;
+     private NPCData npcData = NPCDatabase.Get("thanatos");
      
      Dictionary<string,NPC>cachedNPCs=new Dictionary<string,NPC>();
     // 构造函数接收 IMonitor 和 NPCManager
@@ -50,7 +51,7 @@ namespace P3_ThanatosMods
         Transform(e.NewLocation);
         _NPCManager.SetNPCPosition(npc_P,e.NewLocation);
         isInCombat = true;   
-        CompanionAI companion = new CompanionAI(_Monitor, npc_P);
+        CompanionAI companion = new CompanionAI(_Monitor, npc_P,npcData);
         _AIManager.Add(companion);
     }
     else if (isInCombat && !isMineShaft)

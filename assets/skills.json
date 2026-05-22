@@ -1,0 +1,39 @@
+
+[
+  {
+    "Id": "test",
+    "Name": "普通斩击",
+    "SkillType": "Slash",
+
+    "MinDamage": 10,
+    "MaxDamage": 15,
+    "CooldownTicks": 60,
+    "Range": 64,
+    "Priority": 10,
+
+    "KnockBack": 1.5,
+    "CritChance": 0.05,
+    "CritMultiplier": 2.0,
+
+    "IsProjectile": false,
+    "IsBomb": false
+  },
+  {
+    "Id": "fireball",
+    "Name": "火球术",
+    "SkillType": "Fireball",
+
+    "MinDamage": 20,
+    "MaxDamage": 35,
+    "CooldownTicks": 180,
+    "Range": 256,
+    "Priority": 20,
+
+    "KnockBack": 1.0,
+    "CritChance": 0.1,
+    "CritMultiplier": 2.0,
+
+    "IsProjectile": true,
+    "IsBomb": false
+  }
+]

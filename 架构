@@ -20,7 +20,17 @@ Mod/
 ├── Models/
 │   ├── NPCData.cs             // NPC配置（数据驱动）
 │   ├── SkillData.cs           // 技能树
+
 │
+├── Skills/
+│   ├── SkillBase.cs              // 技能基类 / 接口
+│   ├── SkillManager.cs           // 技能管理器：释放、冷却、注册
+│   ├── ActiveSkills/
+│   │   ├── SlashSkill.cs         // 具体主动技能
+│   │   ├── FireballSkill.cs
+│   ├── PassiveSkills/
+│   │   ├── AttackBoostSkill.cs   // 具体被动技能
+
 ├── Entry/
 │   ├── ModEntry.cs            // SMAPI入口
 

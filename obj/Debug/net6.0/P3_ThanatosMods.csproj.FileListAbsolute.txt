@@ -14,3 +14,4 @@ D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.AssemblyInfoInputs.cach
 D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.AssemblyInfo.cs
 D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.csproj.CoreCompileInputs.cache
 D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.dll
+D:\code\P3_ThanatosMods\obj\Debug\net6.0\P3_ThanatosMods.sourcelink.json

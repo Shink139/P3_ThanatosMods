@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P3_ThanatosMods")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd20eeef8140331fb0ab3c49f6aad03a5e4dec4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("P3_ThanatosMods")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P3_ThanatosMods")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
