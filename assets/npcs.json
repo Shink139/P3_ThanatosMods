@@ -1,4 +1,9 @@
-[{
+[
+  {
   "Id": "thanatos",
-  "Name": "Thanatos"
-}]
+  "Name": "Thanatos",
+  "Skills": [
+      "Slash"
+    ]
+}
+]

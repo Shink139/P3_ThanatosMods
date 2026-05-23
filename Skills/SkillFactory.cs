@@ -13,14 +13,14 @@ namespace P3_ThanatosMods
 {
 public static class SkillFactory
 {
-    public static SkillBase Create(string skillId)
+    public static SkillBase Create(string skillId, AnimationController animationController)
     {
         SkillData data = SkillDatabase.Get(skillId);
         SkillRuntime runtime = new SkillRuntime(data);
 
         return data.SkillType switch
         {
-            "test" => new TestSkills(runtime),
+            "Slash" => new SlashSkills(runtime, data, animationController),
             //"Fireball" => new FireballSkill(runtime),
             _ => throw new Exception($"Unknown SkillType: {data.SkillType}")
         };

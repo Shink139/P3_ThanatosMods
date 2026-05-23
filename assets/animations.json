@@ -1,0 +1,14 @@
+[{
+    "Id": "idle",
+    "Frames": [0,1],
+    "FrameDuration": 60,
+    "Loop": true
+},
+    {
+  "Id": "Slash",
+  "Frames": [4,5,6],
+  "FrameDuration": 6,
+  "Loop": false,
+  "NextAnimation": "idle"
+}
+]

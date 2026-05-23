@@ -15,20 +15,25 @@ namespace P3_ThanatosMods
     {
         static List<SkillBase> skills = new List<SkillBase>();
          public IReadOnlyList<SkillBase> Skills => skills;
+         private readonly IMonitor _Monitor;
+         private readonly AnimationController _AnimationController;
 
-         public SkillManager(List<string> skillIds)
+         public SkillManager(List<string> skillIds, AnimationController animationController, IMonitor monitor)
         {
+            _Monitor = monitor;
+            _AnimationController = animationController;
             foreach (string id in skillIds)
             {
-            SkillBase skill = SkillFactory.Create(id);
+            SkillBase skill = SkillFactory.Create(id, animationController);
             skills.Add(skill);
             }
         }
-        public static bool TryUseBestSkill(CompanionAI ai, Monster target)
+        public  bool TryUseBestSkill(CompanionAI ai, Monster target)
         {
             // 在这里实现选择和使用最佳技能的逻辑
             int currentTick = Game1.ticks;
-
+        if(skills.Count == 0)
+            _Monitor.Log("No skills available for this NPC.", LogLevel.Warn);
         foreach (SkillBase skill in skills)
         {
             if (skill.TryUse(ai, target, currentTick))

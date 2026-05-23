@@ -20,17 +20,19 @@ namespace P3_ThanatosMods
             public Farmer? player_P => Game1.player;
             private readonly NPCManager _NPCManager;
 
-            public TargetSystem TargetSystem;
-             public NPCData Data { get; }
-             public SkillManager SkillManager { get; }
-    public PathfindingSystem PathfindingSystem;
-    public CombatSystem CombatSystem;
+            public TargetSystem TargetSystem { get; }
+            public NPCData Data { get; }
+            public SkillManager SkillManager { get; }
+            public PathfindingSystem PathfindingSystem { get; }
+            public CombatSystem CombatSystem { get; }
             private StateMachine stateMachine;
+            private AnimationController animationController;
           
             // 构造函数接收 IMonitor 和 NPCManager
             public CompanionAI(IMonitor Monitor,NPC npc,NPCData npcData)
             {
                 _Monitor = Monitor;
+                animationController = new AnimationController(npc);
                 npc_P = npc;
                 _NPCManager = new NPCManager(Monitor);
                     TargetSystem = new TargetSystem(Monitor, this);
@@ -39,11 +41,12 @@ namespace P3_ThanatosMods
                      Data = npcData;
                
                 stateMachine = new StateMachine(Monitor);
-                 SkillManager = new SkillManager(npcData.Skills);
+                 SkillManager = new SkillManager(npcData.Skills, animationController, _Monitor);
             }
             public void Update()
         {
             stateMachine.Update(this);
+             animationController.Update();
         }
 
 
@@ -91,14 +94,18 @@ public bool InAttackRange(Monster target)
 public void Attack(Monster target)
 {
     SkillManager.TryUseBestSkill(this, target);
-    CombatSystem.Attack(target);
+    //CombatSystem.Attack(target);
 }
 public GameLocation GetGameLocation()
         {
-            return npc_P.currentLocation;
+            return npc_P?.currentLocation;
         }
 public Farmer GetFarmer()
         {
             return player_P;
+        }
+public Vector2 GetPosition()
+        {
+            return npc_P?.Position ?? Vector2.Zero;
         }
 }}

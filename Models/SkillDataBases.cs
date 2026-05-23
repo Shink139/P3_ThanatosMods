@@ -26,9 +26,10 @@ public static class SkillDatabase
 
     public static SkillData Get(string id)
     {
-        if (!Skills.TryGetValue(id, out SkillData? data))
-            throw new Exception($"SkillData not found: {id}");
-
-        return data;
+        if (Skills.TryGetValue(id, out SkillData? data))
+        {
+            return data;
+        }
+    throw new Exception($"SkillData not found: {id}");
     }
 }}

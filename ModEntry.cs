@@ -19,6 +19,8 @@ namespace P3_ThanatosMods
         {
              SkillDatabase.Load(helper);
             NPCDatabase.Load(helper);
+            AnimationDatabase.Load(helper);
+            Monitor.Log("当前DLL版本：2026-05-23-TEST-001", LogLevel.Warn);
 
             _mineHandler = new MapSetting(this.Monitor);
             _NPCManager = new NPCManager(this.Monitor);

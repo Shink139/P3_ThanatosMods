@@ -17,12 +17,16 @@ public class SkillData
     public string Id { get; set; } = "";
     public string Name { get; set; } = "";
 
+    public Rectangle HitBox { get; set; }
+
     public int MinDamage { get; set; }
     public int MaxDamage { get; set; }
 
     public int CooldownTicks { get; set; }
     public int Range { get; set; }
     public int Priority { get; set; }
+
+    public int AddedPrecision { get; set; }
 
     public float KnockBack { get; set; }
     public float CritChance { get; set; }
@@ -32,4 +36,5 @@ public class SkillData
     public bool IsBomb { get; set; }
 
     public string SkillType { get; set; } = "";
+    public string Animation { get; set; } = "";
 }}

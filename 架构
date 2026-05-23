@@ -30,6 +30,12 @@ Mod/
 │   │   ├── FireballSkill.cs
 │   ├── PassiveSkills/
 │   │   ├── AttackBoostSkill.cs   // 具体被动技能
+│
+├── Animation/
+│   ├── AnimationController.cs
+│   ├── AnimationData.cs
+│   ├── AnimationState.cs
+
 
 ├── Entry/
 │   ├── ModEntry.cs            // SMAPI入口

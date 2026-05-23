@@ -14,10 +14,14 @@ namespace P3_ThanatosMods
     public abstract class SkillBase
     {
        protected readonly SkillRuntime Runtime;
+       protected SkillData Data;
+       protected AnimationController AnimationController;
 
-    public SkillBase(SkillRuntime runtime)
+    public SkillBase(SkillRuntime runtime, SkillData data, AnimationController animationController)
     {
         Runtime = runtime;
+        Data = data;
+        AnimationController = animationController;
     }
 
     public bool TryUse(CompanionAI ai, Monster target, int currentTick)
